@@ -19,3 +19,4 @@ cpal = "0.15"
 [lib]
 name = "app_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
+tauri-plugin-fs = "2"

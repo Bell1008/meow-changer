@@ -85,6 +85,7 @@ fn get_status() -> String {
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_log::Builder::default().build())
+        .plugin(tauri_plugin_fs::init())
         .invoke_handler(tauri::generate_handler![
             generate_chat_wav,
             get_status
